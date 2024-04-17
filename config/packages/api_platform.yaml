@@ -1,0 +1,16 @@
+# api/config/packages/api_platform.yaml
+api_platform:
+  formats:
+      #jsonld: ['application/ld+json']
+      json: ['application/json']
+      html: ['text/html']
+
+  defaults:
+        pagination_enabled: false
+
+  enable_swagger_ui: '%env(bool:ENABLE_API_DOCS)%'
+  swagger:
+    api_keys:
+      access_token: #JWT
+        name: Authorization
+        type: header

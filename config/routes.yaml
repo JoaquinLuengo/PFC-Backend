@@ -1,0 +1,90 @@
+api_login_check:
+    path: /api/login_check
+
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+obtener_datos_de_api:
+    path: /obtener-datos-de-api
+    controller: App\Controller\EquipoController::obtenerDatosDeApi
+
+ping_computer:
+    path: /ping
+    controller: App\Controller\PingController::pingAction
+
+alerts_generate:
+    path: /alert
+    controller: App\Controller\AlertController::generateAlerts
+
+
+# --------- Equipos ---------
+agregar_equipo:
+    path: /obtener-equipo
+    controller: App\Controller\EquipoController::obtenerEquipo
+    methods: [GET]
+
+# --------- Agentes ---------
+eliminar_agente:
+    path: /eliminar-agente/{id}
+    controller: App\Controller\AgenteController::eliminarAgente
+    methods: [POST]
+
+actualizar_agente:
+    path: /actualizar-agente/{id}
+    controller: App\Controller\AgenteController::actualizarAgente
+    methods: [POST]
+
+agregar_agente:
+    path: /agregar-agente
+    controller: App\Controller\AgenteController::agregarAgente
+    methods: [POST]
+# --------- Switches ---------
+
+#switches_controller:
+#    resource: App\Controller\SwitchesController
+#    type: annotation
+#    prefix: /
+
+agregar_switch:
+    path: /agregar-switch
+    controller: App\Controller\SwitchesController::agregarSwitch
+    methods: [POST]
+
+actualizar_switch:
+    path: /actualizar-switch/{id}
+    controller: App\Controller\SwitchesController::actualizarSwitch
+    methods: [POST]
+
+eliminar_switch:
+    path: /eliminar-switch/{id}
+    controller: App\Controller\SwitchesController::eliminarSwitch
+    methods: [POST]
+
+ip_conflictivas:
+    path: /ip-conflictivas
+    controller: App\Controller\IpConflictivasController::ipConflictivas
+    methods: [GET]
+
+estadisticas:
+   path: /estadisticas
+   controller: App\Controller\EstadisticasController::estadisticas
+   methods: [POST]
+
+eliminar_ipadress:
+    path: /eliminar-ipadress/{id}
+    controller: App\Controller\IpadressController::eliminarIpAdress
+    methods: [DELETE]
+
+eliminar_sector:
+    path: /eliminar-sector/{id}
+    controller: App\Controller\SectorController::eliminarSector
+    methods: [DELETE]
+
+# --------- Agentes y equipos ---------
+
+agentevsequipo:
+  path: /agente-equipo
+  controller: App\Controller\AgenteEquipoController::getAgenteEquipo

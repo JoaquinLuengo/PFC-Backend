@@ -1,0 +1,42 @@
+{
+    "devDependencies": {
+        "@api-platform/admin": "^3.4.3",
+        "@babel/core": "^7.17.0",
+        "@babel/preset-env": "^7.16.0",
+        "@babel/preset-react": "^7.18.6",
+        "@hotwired/stimulus": "^3.0.0",
+        "@symfony/stimulus-bridge": "^3.2.0",
+        "@symfony/ux-react": "file:vendor/symfony/ux-react/assets",
+        "@symfony/webpack-encore": "^4.0.0",
+        "core-js": "^3.23.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.0",
+        "regenerator-runtime": "^0.13.9",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-notifier": "^1.15.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server --host 0.0.0.0 --port 8090 --hot",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    },
+    "dependencies": {
+        "@api-platform/api-doc-parser": "^0.16.1",
+        "@blackbox-vision/ra-language-spanish": "blackboxvision/ra-language-spanish",
+        "@mui/icons-material": "^5.11.16",
+        "@mui/material": "^5.11.16",
+        "@tanstack/react-query-devtools": "^4.29.1",
+        "ra-data-simple-rest": "^4.9.3",
+        "ra-i18n-polyglot": "^4.9.1",
+        "ra-language-english": "^4.9.1",
+        "ra-language-french": "^4.9.1",
+        "ra-language-spanish": "^1.0.0",
+        "react-admin": "^4.9.1",
+        "react-query": "^3.39.3",
+        "react-router-dom": "^6.10.0"
+    }
+}
